@@ -223,6 +223,7 @@ public class MainActivity extends AppCompatActivity {
                         adapter.notifyDataSetChanged();
                         Toast.makeText(getApplicationContext(), "즐겨찾기에 추가되었습니다",
                                 Toast.LENGTH_SHORT).show();
+                        wv.loadUrl("javascript:setMsg(null)");
                     } else wv.loadUrl("javascript:displayMsg()");
 
                 }
